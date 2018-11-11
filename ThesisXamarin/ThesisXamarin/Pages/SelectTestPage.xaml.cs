@@ -46,7 +46,7 @@ namespace ThesisXamarin.Pages
 
         private void openVibrationLatencyTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new TestNotImplemented());
+            Navigation.PushAsync(new VibrationLatencyPage());
         }
 
         private void openThirdPartyNoticesPage(object sender, EventArgs args)
