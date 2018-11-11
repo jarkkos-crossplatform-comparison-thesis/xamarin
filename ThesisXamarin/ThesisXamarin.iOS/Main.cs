@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace xamarin.iOS
+namespace ThesisXamarin.iOS
 {
     public class Application
     {

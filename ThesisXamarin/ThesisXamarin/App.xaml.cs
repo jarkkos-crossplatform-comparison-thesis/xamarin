@@ -2,8 +2,10 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using ThesisXamarin.Pages;
+
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace xamarin
+namespace ThesisXamarin
 {
     public partial class App : Application
     {
@@ -11,7 +13,7 @@ namespace xamarin
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new SelectTestPage();
         }
 
         protected override void OnStart()

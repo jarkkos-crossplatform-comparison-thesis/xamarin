@@ -1,14 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:xamarin;assembly=xamarin"
-             x:Class="xamarin.MainPage">
-
+             xmlns:local="clr-namespace:ThesisXamarin;assembly=ThesisXamarin"
+             x:Class="ThesisXamarin.Pages.SelectTestPage">
     <StackLayout>
         <StackLayout 
             Orientation="Horizontal">
             <Image
-                Source="{local:ImageResource xamarin.Assets.xamarin-logo.png}"
+                Source="{local:ImageResource ThesisXamarin.Assets.xamarin-logo.png}"
                 HorizontalOptions="StartAndExpand" />
             <StackLayout
                 Orientation="Vertical"
@@ -18,7 +17,7 @@
                 <Label HorizontalTextAlignment="Center">Select test</Label>
             </StackLayout>
             <Image
-                Source="{local:ImageResource xamarin.Assets.xamarin-logo.png}"
+                Source="{local:ImageResource ThesisXamarin.Assets.xamarin-logo.png}"
                 HorizontalOptions="EndAndExpand" />
         </StackLayout>
         <Button
