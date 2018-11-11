@@ -15,6 +15,43 @@ namespace ThesisXamarin.Pages
 		public SelectTestPage ()
 		{
 			InitializeComponent ();
-		}
-	}
+
+            openButtonLatencyTestBtn.Pressed += openButtonLatencyTest;
+            openLocalListViewTestBtn.Pressed += openLocalListViewTest;
+            openNetworkListViewTestBtn.Pressed += openNetworkListViewTest;
+            openHeavyComputationTestBtn.Pressed += openHeavyComputationTest;
+            openVibrationLatencyTestBtn.Pressed += openVibrationLatencyTest;
+            openThirdPartyNoticesPageBtn.Pressed += openThirdPartyNoticesPage;
+        }
+
+        private void openButtonLatencyTest(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new TestNotImplemented());
+        }
+
+        private void openLocalListViewTest(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new TestNotImplemented());
+        }
+
+        private void openNetworkListViewTest(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new TestNotImplemented());
+        }
+        
+        private void openHeavyComputationTest(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new TestNotImplemented());
+        }
+
+        private void openVibrationLatencyTest(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new TestNotImplemented());
+        }
+
+        private void openThirdPartyNoticesPage(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new TestNotImplemented());
+        }
+    }
 }

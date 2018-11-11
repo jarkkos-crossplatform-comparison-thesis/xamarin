@@ -13,7 +13,7 @@ namespace ThesisXamarin
         {
             InitializeComponent();
 
-            MainPage = new SelectTestPage();
+            MainPage = new NavigationPage(new SelectTestPage());
         }
 
         protected override void OnStart()

@@ -21,26 +21,32 @@
                 HorizontalOptions="EndAndExpand" />
         </StackLayout>
         <Button
+            x:Name="openButtonLatencyTestBtn"
             Text="Button latency"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center" />
         <Button
+            x:Name="openLocalListViewTestBtn"
             Text="Local listview"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center" />
         <Button
+            x:Name="openNetworkListViewTestBtn"
             Text="Network listview"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center" />
         <Button
-            Text="Heacy computation"
+            x:Name="openHeavyComputationTestBtn"
+            Text="Heavy computation"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center" />
         <Button
+            x:Name="openVibrationLatencyTestBtn"
             Text="Vibration latency"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center" />
         <Button
+            x:Name="openThirdPartyNoticesPageBtn"
             Text="Third party notices"
             VerticalOptions="CenterAndExpand"
             HorizontalOptions="Center" />
