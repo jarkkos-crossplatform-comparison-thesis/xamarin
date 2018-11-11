@@ -1,14 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:xamarin"
+             xmlns:local="clr-namespace:xamarin;assembly=xamarin"
              x:Class="xamarin.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <StackLayout 
+            Orientation="Horizontal">
+            <Image
+                Source="{local:ImageResource xamarin.Assets.xamarin-logo.png}"
+                HorizontalOptions="StartAndExpand" />
+            <StackLayout
+                Orientation="Vertical"
+                HorizontalOptions="CenterAndExpand">
+                <Label HorizontalTextAlignment="Center">Xamarin.Forms</Label>
+                <Label HorizontalTextAlignment="Center">Version whatever</Label>
+                <Label HorizontalTextAlignment="Center">Select test</Label>
+            </StackLayout>
+            <Image
+                Source="{local:ImageResource xamarin.Assets.xamarin-logo.png}"
+                HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+        <Button
+            Text="Button latency"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center" />
+        <Button
+            Text="Local listview"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center" />
+        <Button
+            Text="Network listview"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center" />
+        <Button
+            Text="Heacy computation"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center" />
+        <Button
+            Text="Vibration latency"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center" />
+        <Button
+            Text="Third party notices"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="Center" />
     </StackLayout>
 
 </ContentPage>
