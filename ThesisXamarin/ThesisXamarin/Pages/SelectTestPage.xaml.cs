@@ -26,7 +26,7 @@ namespace ThesisXamarin.Pages
 
         private void openButtonLatencyTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new TestNotImplemented());
+            Navigation.PushAsync(new ButtonLatencyPage());
         }
 
         private void openLocalListViewTest(object sender, EventArgs args)
