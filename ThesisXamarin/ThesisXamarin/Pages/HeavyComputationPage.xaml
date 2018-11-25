@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThesisXamarin.Pages.HeavyComputationPage">
+    <ContentPage.Content>
+        <StackLayout
+                Orientation="Vertical"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center">
+            <Button
+                x:Name="startComputationBtn"
+                Text="Click me!" />
+            <Label
+                x:Name="stateLabel"
+                HorizontalTextAlignment="Center">Click to start</Label>
+            <ActivityIndicator
+                x:Name="activityIndicator"
+                HorizontalOptions="Center"
+                IsRunning="False" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

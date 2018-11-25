@@ -41,7 +41,7 @@ namespace ThesisXamarin.Pages
         
         private void openHeavyComputationTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new TestNotImplemented());
+            Navigation.PushAsync(new HeavyComputationPage());
         }
 
         private void openVibrationLatencyTest(object sender, EventArgs args)
