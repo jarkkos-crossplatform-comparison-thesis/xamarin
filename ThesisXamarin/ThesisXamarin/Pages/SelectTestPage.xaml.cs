@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ThesisXamarin.Logic;
 
 namespace ThesisXamarin.Pages
 {
@@ -31,12 +32,12 @@ namespace ThesisXamarin.Pages
 
         private void openLocalListViewTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new TestNotImplemented());
+            Navigation.PushAsync(new ListItemsPage(new LocalListItemsLoader()));
         }
 
         private void openNetworkListViewTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new TestNotImplemented());
+            Navigation.PushAsync(new ListItemsPage(new NetworkListItemsLoader()));
         }
         
         private void openHeavyComputationTest(object sender, EventArgs args)
