@@ -2,18 +2,40 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ThesisXamarin.Pages.ListItemsPage">
-    <ListView x:Name="ItemListView"
-            CachingStrategy="RecycleElement"
-              RowHeight="80">
-        <ListView.ItemTemplate>
+    <StackLayout>
+        <ActivityIndicator
+            x:Name="LoadingItemsIndicator"
+            IsRunning="true"
+            IsVisible="true"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+
+        <ListView x:Name="ItemListView"
+            CachingStrategy="RetainElement"
+            RowHeight="80">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+                            <Image Source="{Binding Image}" Aspect="AspectFit" WidthRequest="80" HeightRequest="80"/>
+                            <Label Text = "{Binding Description}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+
+                <!--
+            The built-in ImageCell seems to have better performance, but the text doens't wrap
+            so it doesn't fit the specification
+            -->
+                <!--
             <DataTemplate>
-                <ViewCell>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
-                        <Image Source="{Binding Image}" Aspect="AspectFit" WidthRequest="80" HeightRequest="80"/>
-                        <Label Text = "{Binding Description}" />
-                    </StackLayout>
-                </ViewCell>
+                <ImageCell
+                    Text="{Binding Description}"
+                    TextColor="Black"
+                    ImageSource="{Binding Image}"/>
             </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+            -->
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>

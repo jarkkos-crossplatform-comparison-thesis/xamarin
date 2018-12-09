@@ -18,12 +18,14 @@ namespace ThesisXamarin.Pages
         public ListItemsPage(ListItemsLoader itemsLoader)
         {
             InitializeComponent();
+            LoadingItemsIndicator.IsVisible = true;
             loadItems(itemsLoader);
         }
 
         private async void loadItems(ListItemsLoader itemsLoader)
         {
             ListItems = await itemsLoader.LoadItems();
+            LoadingItemsIndicator.IsVisible = false;
             ItemListView.ItemsSource = ListItems;
         }
     }
