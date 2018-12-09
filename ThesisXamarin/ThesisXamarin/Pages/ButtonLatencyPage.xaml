@@ -5,16 +5,25 @@
     <ContentPage.Content>
         <StackLayout
                 Orientation="Vertical"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="Center">
+                VerticalOptions="FillAndExpand">
             <Button
-                x:Name="incrementCounterBtn"
-                Text="Click me!"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center" />
-            <Label
-                x:Name="counterText"
-                HorizontalTextAlignment="Center">Placeholder</Label>
+                x:Name="goBackNoAnimationBtn"
+                Text="Go back without animation"
+                VerticalOptions="Start"
+                HorizontalOptions="Start" />
+            <StackLayout
+                Orientation="Vertical"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
+                <Button
+                    x:Name="incrementCounterBtn"
+                    Text="Click me!"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center" />
+                <Label
+                    x:Name="counterText"
+                    HorizontalTextAlignment="Center">Placeholder</Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

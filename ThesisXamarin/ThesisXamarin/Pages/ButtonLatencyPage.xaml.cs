@@ -20,6 +20,7 @@ namespace ThesisXamarin.Pages
 
             updateCounterText();
             incrementCounterBtn.Pressed += incrementCounter;
+            goBackNoAnimationBtn.Pressed += goBackUnanimated;
         }
 
         private void incrementCounter(object sender, EventArgs args)
@@ -32,6 +33,11 @@ namespace ThesisXamarin.Pages
         private void updateCounterText()
         {
             counterText.Text = counter.ToString();
+        }
+
+        private void goBackUnanimated(object sender, EventArgs args)
+        {
+            Navigation.PopAsync(false);
         }
     }
 }

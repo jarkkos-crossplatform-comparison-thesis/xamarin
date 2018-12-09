@@ -27,32 +27,32 @@ namespace ThesisXamarin.Pages
 
         private void openButtonLatencyTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new ButtonLatencyPage());
+            Navigation.PushAsync(new ButtonLatencyPage(), false);
         }
 
         private void openLocalListViewTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new ListItemsPage(new LocalListItemsLoader()));
+            Navigation.PushAsync(new ListItemsPage(new LocalListItemsLoader()), false);
         }
 
         private void openNetworkListViewTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new ListItemsPage(new NetworkListItemsLoader()));
+            Navigation.PushAsync(new ListItemsPage(new NetworkListItemsLoader()), false);
         }
         
         private void openHeavyComputationTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new HeavyComputationPage());
+            Navigation.PushAsync(new HeavyComputationPage(), false);
         }
 
         private void openVibrationLatencyTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new VibrationLatencyPage());
+            Navigation.PushAsync(new VibrationLatencyPage(), false);
         }
 
         private void openThirdPartyNoticesPage(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new TestNotImplemented());
+            Navigation.PushAsync(new TestNotImplemented(), false);
         }
     }
 }
