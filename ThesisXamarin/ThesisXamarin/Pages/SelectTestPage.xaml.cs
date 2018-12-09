@@ -32,12 +32,12 @@ namespace ThesisXamarin.Pages
 
         private void openLocalListViewTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new ListItemsPage(new LocalListItemsLoader()), false);
+            Navigation.PushAsync(new ListItemsPage(new LocalListItemsLoader()) { Title = "Local listview" }, false);
         }
 
         private void openNetworkListViewTest(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new ListItemsPage(new NetworkListItemsLoader()), false);
+            Navigation.PushAsync(new ListItemsPage(new NetworkListItemsLoader()) { Title = "Network listview" }, false);
         }
         
         private void openHeavyComputationTest(object sender, EventArgs args)
