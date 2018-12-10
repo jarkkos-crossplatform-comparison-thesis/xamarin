@@ -4,53 +4,66 @@
              xmlns:local="clr-namespace:ThesisXamarin;assembly=ThesisXamarin"
              x:Class="ThesisXamarin.Pages.SelectTestPage"
              Title="Thesis benchmarking">
-    <StackLayout>
-        <StackLayout 
-            Orientation="Horizontal">
-            <Image
-                Source="{local:ImageResource ThesisXamarin.Assets.xamarin-logo.png}"
-                HorizontalOptions="StartAndExpand" />
-            <StackLayout
-                Orientation="Vertical"
-                HorizontalOptions="CenterAndExpand">
-                <Label HorizontalTextAlignment="Center">Xamarin.Forms</Label>
-                <Label HorizontalTextAlignment="Center">Version whatever</Label>
-                <Label HorizontalTextAlignment="Center">Select test</Label>
+    <ScrollView>
+        <StackLayout>
+            <StackLayout 
+                Orientation="Horizontal">
+                <Image
+                    Source="{local:ImageResource ThesisXamarin.Assets.xamarin-logo.png}"
+                    HorizontalOptions="StartAndExpand" />
+                <StackLayout
+                    Orientation="Vertical"
+                    HorizontalOptions="CenterAndExpand">
+                    <Label HorizontalTextAlignment="Center">Xamarin.Forms</Label>
+                    <Label HorizontalTextAlignment="Center">Version whatever</Label>
+                    <Label HorizontalTextAlignment="Center">Select test</Label>
+                </StackLayout>
+                <Image
+                    Source="{local:ImageResource ThesisXamarin.Assets.xamarin-logo.png}"
+                    HorizontalOptions="EndAndExpand" />
             </StackLayout>
-            <Image
-                Source="{local:ImageResource ThesisXamarin.Assets.xamarin-logo.png}"
-                HorizontalOptions="EndAndExpand" />
+            <Button
+                x:Name="openButtonLatencyTestBtn"
+                Text="Button latency"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openLocalListViewTestBtn"
+                Text="Local listview"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openNetworkListViewTestBtn"
+                Text="Network listview"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openHeavyComputationTestBtn"
+                Text="Heavy computation"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openVibrationLatencyTestBtn"
+                Text="Vibration latency"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openThirdPartyNoticesPageBtn"
+                Text="Third party notices"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
         </StackLayout>
-        <Button
-            x:Name="openButtonLatencyTestBtn"
-            Text="Button latency"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center" />
-        <Button
-            x:Name="openLocalListViewTestBtn"
-            Text="Local listview"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center" />
-        <Button
-            x:Name="openNetworkListViewTestBtn"
-            Text="Network listview"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center" />
-        <Button
-            x:Name="openHeavyComputationTestBtn"
-            Text="Heavy computation"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center" />
-        <Button
-            x:Name="openVibrationLatencyTestBtn"
-            Text="Vibration latency"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center" />
-        <Button
-            x:Name="openThirdPartyNoticesPageBtn"
-            Text="Third party notices"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="Center" />
-    </StackLayout>
-
+    </ScrollView>
 </ContentPage>
