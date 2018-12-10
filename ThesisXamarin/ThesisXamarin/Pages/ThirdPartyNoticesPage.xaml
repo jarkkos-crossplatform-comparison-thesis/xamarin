@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ThesisXamarin.Pages.TestNotImplemented"
+             Title="Third party notices">
+    <ContentPage.Content>
+        <StackLayout 
+            VerticalOptions="StartAndExpand" 
+            HorizontalOptions="StartAndExpand"
+            Margin="16, 0">
+
+            <StackLayout
+                 Margin="0, 16">
+                <Label Text="Xamarin" FontSize="Large"/>
+                <Label Text="Microsoft" />
+                <Label Text="https://visualstudio.microsoft.com/xamarin/" />
+            </StackLayout>
+
+            <StackLayout
+                 Margin="0, 16">
+                <Label Text="Listview images from Caltech 101 dataset" FontSize="Large"/>
+                <Label Text="L. Fei-Fei, R. Fergus and P. Perona. Learning generative visual models
+from few training examples: an incremental Bayesian approach tested on
+101 object categories. IEEE. CVPR 2004, Workshop on Generative-Model
+Based Vision. 2004" />
+            </StackLayout>
+
+            <StackLayout
+                 Margin="0, 16">
+                <Label Text="Placeholder texts generated at https://www.lipsum.com/" FontSize="Large"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

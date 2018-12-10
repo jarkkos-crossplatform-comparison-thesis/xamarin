@@ -626,6 +626,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Pages\ThirdPartyNoticesPage.xaml.cs">
+      <DependentUpon>ThirdPartyNoticesPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Pages\ButtonLatencyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -638,7 +644,7 @@
     <EmbeddedResource Update="Pages\SelectTestPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\TestNotImplemented.xaml">
+    <EmbeddedResource Update="Pages\ThirdPartyNoticesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\VibrationLatencyPage.xaml">
