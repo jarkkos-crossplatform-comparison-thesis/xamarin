@@ -626,28 +626,28 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Pages\ThirdPartyNoticesPage.xaml.cs">
+    <Compile Update="ThirdPartyNotices\ThirdPartyNoticesPage.xaml.cs">
       <DependentUpon>ThirdPartyNoticesPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Pages\ButtonLatencyPage.xaml">
+    <EmbeddedResource Update="ButtonLatency\ButtonLatencyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\HeavyComputationPage.xaml">
+    <EmbeddedResource Update="HeavyComputation\HeavyComputationPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\ListItemsPage.xaml">
+    <EmbeddedResource Update="ListItems\ListItemsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\SelectTestPage.xaml">
+    <EmbeddedResource Update="SelectTest\SelectTestPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\ThirdPartyNoticesPage.xaml">
+    <EmbeddedResource Update="ThirdPartyNotices\ThirdPartyNoticesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Pages\VibrationLatencyPage.xaml">
+    <EmbeddedResource Update="VibrationLatency\VibrationLatencyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

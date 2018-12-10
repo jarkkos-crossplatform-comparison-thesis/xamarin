@@ -15,7 +15,7 @@
                     Orientation="Vertical"
                     HorizontalOptions="CenterAndExpand">
                     <Label HorizontalTextAlignment="Center">Xamarin.Forms</Label>
-                    <Label HorizontalTextAlignment="Center">Version whatever</Label>
+                    <Label HorizontalTextAlignment="Center">Version 1</Label>
                     <Label HorizontalTextAlignment="Center">Select test</Label>
                 </StackLayout>
                 <Image
