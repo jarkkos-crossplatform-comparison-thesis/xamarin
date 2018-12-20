@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ThesisXamarin.Pages.ButtonLatencyPage"
              Title="Button latency">
-    <ContentPage.Content>
+    <StackLayout
+            Orientation="Vertical">
         <StackLayout
-                Orientation="Vertical"
-                VerticalOptions="FillAndExpand">
+            Orientation="Vertical"
+            VerticalOptions="FillAndExpand">
             <Button
                 x:Name="goBackNoAnimationBtn"
                 Text="Go back without animation"
@@ -26,5 +27,11 @@
                     HorizontalTextAlignment="Center">Placeholder</Label>
             </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+        
+        <BoxView
+            Color="Green"
+            HeightRequest="12"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="End" />
+    </StackLayout>
 </ContentPage>

@@ -14,54 +14,62 @@
                 Orientation="Vertical"
                 HorizontalOptions="CenterAndExpand">
                 <Label HorizontalTextAlignment="Center">Xamarin.Forms</Label>
-                <Label HorizontalTextAlignment="Center">Version 2</Label>
+                <Label HorizontalTextAlignment="Center">Version 3</Label>
                 <Label HorizontalTextAlignment="Center">Select test</Label>
             </StackLayout>
             <Image
                 Source="{local:ImageResource ThesisXamarin.Assets.xamarin-logo.png}"
                 HorizontalOptions="EndAndExpand" />
         </StackLayout>
-        <Button
-            x:Name="openButtonLatencyTestBtn"
-            Text="Button latency"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            WidthRequest="220"
-            Margin="0, 8" />
-        <Button
-            x:Name="openLocalListViewTestBtn"
-            Text="Local listview"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            WidthRequest="220"
-            Margin="0, 8" />
-        <Button
-            x:Name="openNetworkListViewTestBtn"
-            Text="Network listview"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            WidthRequest="220"
-            Margin="0, 8" />
-        <Button
-            x:Name="openHeavyComputationTestBtn"
-            Text="Heavy computation"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            WidthRequest="220"
-            Margin="0, 8" />
-        <Button
-            x:Name="openVibrationLatencyTestBtn"
-            Text="Vibration latency"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            WidthRequest="220"
-            Margin="0, 8" />
-        <Button
-            x:Name="openThirdPartyNoticesPageBtn"
-            Text="Third party notices"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            WidthRequest="220"
-            Margin="0, 8" />
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Button
+                x:Name="openButtonLatencyTestBtn"
+                Text="Button latency"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openLocalListViewTestBtn"
+                Text="Local listview"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openNetworkListViewTestBtn"
+                Text="Network listview"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openHeavyComputationTestBtn"
+                Text="Heavy computation"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openVibrationLatencyTestBtn"
+                Text="Vibration latency"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+            <Button
+                x:Name="openThirdPartyNoticesPageBtn"
+                Text="Third party notices"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="220"
+                Margin="0, 8" />
+        </StackLayout>
+       
+        <BoxView
+            Color="Red"
+            HeightRequest="12"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="End" />
     </StackLayout>
 </ContentPage>

@@ -20,6 +20,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ReleaseVersion>1.0</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,7 @@
     <AndroidLinkMode>Full</AndroidLinkMode>
     <EnableProguard>true</EnableProguard>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -77,8 +79,6 @@
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values\colors.xml" />
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.xml" />
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon_round.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
@@ -89,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThesisXamarin\ThesisXamarin.csproj">
-      <Project>{9973F5F5-406F-441A-A143-0CE86E1E6AF5}</Project>
+      <Project>{DCD764BE-7D67-4DAF-BF52-745566664346}</Project>
       <Name>ThesisXamarin</Name>
     </ProjectReference>
   </ItemGroup>
